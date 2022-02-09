@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+
+    <title>Warehouse Manager</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="row container-fluid text-light">
+            <div class="col text-center bg-dark ">
+                <h1 class="text-center">Warehouse Manager</h1>
+                <button class="mb-2" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <div class="row mt-1">
+
+            <div class="col-12  d-flex justify-content-around align-items-center">
+                <button onclick="filter('heavy')">Weight</button>
+                <button onclick="filter('priority')">priority </button>
+                <button onclick="filter('fragile')">fragile</button>
+                <button onclick="filterTo('Harrington')">Harrington</button>
+                <button onclick="filterTo('Mick')">Mick</button>
+                <button onclick="filterTo('Mark')">Mark</button>
+                <button onclick="filterTo('Jake')">Jake</button>
+                <button onclick="filterTo('Brittany')">Brittany</button>
+                <button onclick="filterTo('Zach')">Zach</button>
+                <button onclick="filterTo('Jeremy')">Jeremy</button>
+
+
+            </div>
+        </div>
+        <div class="row" id="cards">
+            <!-- <div class="col-12 col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Package
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Weight</li>
+                        <li class="list-group-item">Priority</li>
+                        <li class="list-group-item">Fragile</li>
+                        <li class="list-group-item">Shipped To</li>
+                        <li class="list-group-item">Tracking Number</li>
+                    </ul>
+                </div>
+            </div>  -->
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
